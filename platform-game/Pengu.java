@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Pengu extends Actor
 {
     private int speed = 7;
+    private int vSpeed = 5;
     
     /**
      * Act - do whatever the Pengu wants to do. This method is called whenever
@@ -29,6 +30,10 @@ public class Pengu extends Actor
             setImage("pengu-right.png");
             moveRight();
         }
+    }
+    public void fail()
+    {
+         setLocation(getX(),getY() + vSpeed);
     }
 
     public void moveRight()
