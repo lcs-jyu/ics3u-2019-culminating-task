@@ -69,7 +69,7 @@ public class Hero extends Actor
         horizontalDirection = FACING_RIGHT;
 
         // Set image
-        setImage("hero-jump-down-right.png");
+        setImage("BubbleBobble_31.png");
 
         // Initialize the 'walking' arrays
         walkingRightImages = new GreenfootImage[COUNT_OF_WALKING_IMAGES];
@@ -78,11 +78,11 @@ public class Hero extends Actor
         // Load walking images from disk
         for (int i = 0; i < walkingRightImages.length; i++)
         {
-            walkingRightImages[i] = new GreenfootImage("hero-walk-right-" + i + ".png");
+            walkingRightImages[i] = new GreenfootImage("BubbleBobble_31.png");
 
             // Create left-facing images by mirroring horizontally
             walkingLeftImages[i] = new GreenfootImage(walkingRightImages[i]);
-            walkingLeftImages[i].mirrorHorizontally();
+            walkingLeftImages[i].mirrorHorizontally(); 
         }
 
         // Track animation frames for walking
@@ -215,11 +215,11 @@ public class Hero extends Actor
         // Set image
         if (horizontalDirection == FACING_RIGHT)
         {
-            setImage("hero-jump-up-right.png");
+            setImage("BubbleBobble_31.png");
         }
         else
         {
-            setImage("hero-jump-up-left.png");
+            setImage("BubbleBobble_31.png");
         }
 
         // Change the vertical speed to the power of the jump
@@ -242,11 +242,11 @@ public class Hero extends Actor
             // Set image
             if (horizontalDirection == FACING_RIGHT)
             {
-                setImage("hero-jump-down-right.png");
+                setImage("BubbleBobble_31.png");
             }
             else
             {
-                setImage("hero-jump-down-left.png");
+                setImage("BubbleBobble_31.png");
             }
         }
 
@@ -307,11 +307,11 @@ public class Hero extends Actor
             // Set appropriate jumping image
             if (verticalDirection == JUMPING_UP)
             {
-                setImage("hero-jump-up-right.png");
+                setImage("BubbleBobble_31.png");
             }
             else
             {
-                setImage("hero-jump-down-right.png");
+                setImage("BubbleBobble_31.png");
             }
         }
 
@@ -419,11 +419,11 @@ public class Hero extends Actor
             // Set appropriate jumping image
             if (verticalDirection == JUMPING_UP)
             {
-                setImage("hero-jump-up-left.png");
+                setImage("BubbleBobble_31.png");
             }
             else
             {
-                setImage("hero-jump-down-left.png");
+                setImage("BubbleBobble_31.png");
             }
         }
 
