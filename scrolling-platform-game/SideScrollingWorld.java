@@ -1,3 +1,4 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -99,7 +100,7 @@ public class SideScrollingWorld extends World
        frames = frames + 1;
 
         // Add plates from group 1 in the first vertical row
-        for (int i = 0; i <= 3; i += 1) 
+        for (int i = 0; i <= 13; i += 1) 
         {
             //Location
             int x = 0 * TILE_SIZE + HALF_TILE_SIZE;
@@ -109,30 +110,6 @@ public class SideScrollingWorld extends World
             MetalPlate jieun = new MetalPlate (x, y);
             addObject(jieun, x, y);
         }
-        // Add plates from group 2 in the first vertical row
-        for (int i = 0; i <= 2; i += 1) 
-        {
-            //Location
-            int x = 0 * TILE_SIZE + HALF_TILE_SIZE;
-            int y = 6 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
-
-            // Create and add to world 
-            MetalPlate jieun = new MetalPlate (x, y);
-            addObject(jieun, x, y);
-        }
-
-        // Add plates from group 3 in the first vertical row
-        for (int i = 0; i <= 3; i += 1) 
-        {
-            //Location
-            int x = 0 * TILE_SIZE + HALF_TILE_SIZE;
-            int y = 11 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
-
-            // Create and add to world 
-            MetalPlate jieun = new MetalPlate (x, y);
-            addObject(jieun, x, y);
-        }
-
         // Add plates from group 1 in the second vertical row
         for (int i = 0; i <= 5; i += 1) 
         {
@@ -500,6 +477,156 @@ public class SideScrollingWorld extends World
             MetalPlate jieun = new MetalPlate (x, y);
             addObject(jieun, x, y);
         }
+        //Add plates from group 1 in the 15th vertical row
+
+        for (int i = 0; i <= 4 ; i += 1) 
+        {
+            //Location
+            int x = 40 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 0 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        //Add plates from group 1 in the 16th vertical row
+
+        for (int i = 0; i <= 5 ; i += 1) 
+        {
+            //Location
+            int x = 45 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 8 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        //Add plates from group 2 in the 16th vertical row
+
+        for (int i = 0; i <= 2 ; i += 1) 
+        {
+            //Location
+            int x = 45 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 0 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+       
+        //Add plates from group 1 in the 17th vertical row
+
+        for (int i = 0; i <= 2 ; i += 1) 
+        {
+            //Location
+            int x = 45 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 6 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        //Add plates from group 2 in the 17th vertical row
+
+        for (int i = 0; i <= 4 ; i += 1) 
+        {
+            //Location
+            int x = 48 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 0 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        
+        //Add plates from group 1 in the 18th vertical row
+
+        for (int i = 0; i <= 3; i += 1) 
+        {
+            //Location
+            int x = 48 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 8 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        //Add plates from group 1 in the 18th vertical row
+
+        for (int i = 0; i <= 3; i += 1) 
+        {
+            //Location
+            int x = 51 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 0 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        //Add plates from group 2 in the 18th vertical row
+
+        for (int i = 0; i <= 5; i += 1) 
+        {
+            //Location
+            int x = 51 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 7 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        //Add plates from group 1 in the 19th vertical row
+
+        for (int i = 0; i <= 7; i += 1) 
+        {
+            //Location
+            int x = 54 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 0 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        //Add plates from group 1 in the 20th vertical row
+
+        for (int i = 0; i <= 7; i += 1) 
+        {
+            //Location
+            int x = 60 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 8 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        
+        //Add plates from group 1 in the 19th vertical row
+
+        for (int i = 0; i <= 13; i += 1) 
+        {
+            //Location
+            int x = 59 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 0 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+       
+       
+       
+       
+       
+       
+       
        
        
        
