@@ -73,10 +73,8 @@ public class Hero extends Actor
         horizontalDirection = FACING_RIGHT;
 
         // Set image
-        setImage("BubbleBobble_31.png");
+        setImage("hero-jump-down-right.png");
         
-        GreenfootImage image = getImage();  
-        image.scale(30, 30);
 
         // Initialize the 'walking' arrays
         walkingRightImages = new GreenfootImage[COUNT_OF_WALKING_IMAGES];
@@ -85,7 +83,7 @@ public class Hero extends Actor
         // Load walking images from disk
         for (int i = 0; i < walkingRightImages.length; i++)
         {
-            walkingRightImages[i] = new GreenfootImage("BubbleBobble_31.png");
+            walkingRightImages[i] = new GreenfootImage("hero-walk-right-" + i + ".png");
 
             // Create left-facing images by mirroring horizontally
             walkingLeftImages[i] = new GreenfootImage(walkingRightImages[i]);
@@ -154,14 +152,12 @@ public class Hero extends Actor
             // Set image
             if (horizontalDirection == FACING_RIGHT && Greenfoot.isKeyDown("right") == false)
             {
-                setImage("BubbleBobble_19.png");
+                setImage("hero-right.png");
             }
             else if (horizontalDirection == FACING_LEFT && Greenfoot.isKeyDown("left") == false)
             {
-                setImage("BubbleBobble_31.png");
-               
-                GreenfootImage image = getImage();  
-                image.scale(30, 30);
+                setImage("hero-left.png");
+
             }
 
             // Get a reference to any object that's created from a subclass of Platform,
@@ -225,14 +221,12 @@ public class Hero extends Actor
         // Set image
         if (horizontalDirection == FACING_RIGHT)
         {
-            setImage("BubbleBobble_19.png");
+            setImage("hero-jump-up-right.png");
         }
         else
         {
-            setImage("BubbleBobble_31.png");
-            
-            GreenfootImage image = getImage();  
-            image.scale(30, 30);
+            setImage("hero-jump-up-left.png");
+   
         }
 
         // Change the vertical speed to the power of the jump
@@ -255,14 +249,13 @@ public class Hero extends Actor
             // Set image
             if (horizontalDirection == FACING_RIGHT)
             {
-                setImage("BubbleBobble_18.png");
+                setImage("hero-jump-down-right.png");
             }
             else
             {
-                setImage("BubbleBobble_18.png");
+                setImage("hero-jump-down-left.png");
                 
-                GreenfootImage image = getImage();  
-                image.scale(30, 30);
+
             }
         }
 
@@ -323,14 +316,12 @@ public class Hero extends Actor
             // Set appropriate jumping image
             if (verticalDirection == JUMPING_UP)
             {
-                setImage("BubbleBobble_18.png");
+                setImage("hero-jump-up-right.png");
             }
             else
             {
-                setImage("BubbleBobble_18.png");
-                
-                GreenfootImage image = getImage();  
-                image.scale(30, 30);
+                setImage("hero-jump-down-right.png");
+     
             }
         }
 
@@ -438,14 +429,12 @@ public class Hero extends Actor
             // Set appropriate jumping image
             if (verticalDirection == JUMPING_UP)
             {
-                setImage("BubbleBobble_18.png");
+                setImage("hero-jump-up-left.png");
             }
             else
             {
-                setImage("BubbleBobble_31.png");
+                setImage("hero-jump-down-left.png");
                 
-                GreenfootImage image = getImage();  
-                image.scale(30, 30);
             }
         }
 
