@@ -40,6 +40,13 @@ public class SideScrollingWorld extends World
     private boolean isGameOver;
 
     private GreenfootSound backgroundSound;
+    private GreenfootImage backgroundImage;
+    
+    
+    // Track time going up
+    private int frames = 0;
+
+        
     
 
     /**
@@ -58,9 +65,21 @@ public class SideScrollingWorld extends World
         // Game on
         isGameOver = false;
 
-        backgroundSound = new GreenfootSound ("background music of bubble bobble.mp3");
-        backgroundSound.play();
+        backgroundSound = new GreenfootSound("backgroundmusic.mp3");
+       
+        
+        backgroundImage = new GreenfootImage("9.jpg");
+       
+        
+    
+        
 
+    }
+    
+    
+    public void started() 
+    {
+        backgroundSound.playLoop();
     }
 
     /**
@@ -70,10 +89,14 @@ public class SideScrollingWorld extends World
     {
         // TO STUDENTS: Add, revise, or remove methods as needed to define your own game's world
         //addLeftGround();
-        //addFences();
+       
         //addMetalPlateSteps();
-        //addClouds();
+      
         //addRightGround();
+      
+     
+       // Track time
+       frames = frames + 1;
 
         // Add plates from group 1 in the first vertical row
         for (int i = 0; i <= 3; i += 1) 
@@ -130,7 +153,7 @@ public class SideScrollingWorld extends World
             int y = 12 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
 
             // Create and add to world 
-            MetalPlate jieun = new MetalPlate (x, y);
+            MetalPlate jieun = new MetalPlate(x, y);
             addObject(jieun, x, y);
         }
 
@@ -290,7 +313,7 @@ public class SideScrollingWorld extends World
         }
 
         // Add plates from group 1 in the eighth vertical row
-        for (int i = 0; i <= 10 ; i += 1) 
+        for (int i = 0; i <= 5 ; i += 1) 
         {
             //Location
             int x = 19 * TILE_SIZE + HALF_TILE_SIZE;
@@ -349,6 +372,139 @@ public class SideScrollingWorld extends World
             MetalPlate jieun = new MetalPlate (x, y);
             addObject(jieun, x, y);
         }
+        
+        //Add plates from group 1 in the nineth vertical row
+
+        for (int i = 0; i <= 4 ; i += 1) 
+        {
+            //Location
+            int x = 22 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 0 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        //Add plates from group 2 in the nineth vertical row
+
+        for (int i = 0; i <= 5 ; i += 1) 
+        {
+            //Location
+            int x = 22 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 10 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        //Add plates from group 1 in the tenth vertical row
+
+        for (int i = 0; i <= 7 ; i += 1) 
+        {
+            //Location
+            int x = 25 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 0 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        //Add plates from group 2 in the tenth vertical row
+
+        for (int i = 0; i <= 2 ; i += 1) 
+        {
+            //Location
+            int x = 25 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 11 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+         //Add plates from group 1 in the 11th vertical row
+
+        for (int i = 0; i <= 2 ; i += 1) 
+        {
+            //Location
+            int x = 28 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 0 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+     
+        //Add plates from group 2 in the 11th vertical row
+
+        for (int i = 0; i <= 5 ; i += 1) 
+        {
+            //Location
+            int x = 28 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 6 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        //Add plates from group 1 in the 12th vertical row
+
+        for (int i = 0; i <= 7 ; i += 1) 
+        {
+            //Location
+            int x = 32 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 2 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        //Add plates from group 1 in the 13th vertical row
+
+        for (int i = 0; i <= 3 ; i += 1) 
+        {
+            //Location
+            int x = 35 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 0 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+     
+        //Add plates from group 2 in the 13th vertical row
+
+        for (int i = 0; i <= 6 ; i += 1) 
+        {
+            //Location
+            int x = 35 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 6 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+        
+        //Add plates from group 1 in the 14th vertical row
+
+        for (int i = 0; i <= 4 ; i += 1) 
+        {
+            //Location
+            int x = 38 * TILE_SIZE + HALF_TILE_SIZE;
+            int y = 10 * TILE_SIZE + HALF_TILE_SIZE + i * TILE_SIZE;
+
+            // Create and add to world 
+            MetalPlate jieun = new MetalPlate (x, y);
+            addObject(jieun, x, y);
+        }
+       
+       
+       
+       
+       
        
         
  
@@ -360,6 +516,8 @@ public class SideScrollingWorld extends World
 
         addHero();
     }
+    
+ 
 
     /**
      * Add blocks to create the ground to walk on at bottom-left of scrollable world.
@@ -385,39 +543,7 @@ public class SideScrollingWorld extends World
         }
     }
 
-    /**
-     * Add some fences at left and right side.
-     */
-    private void addFences()
-    {
-        // Three fences on left side of world
-        int x = HALF_TILE_SIZE + TILE_SIZE * 5;
-        int y = VISIBLE_HEIGHT - HALF_TILE_SIZE - TILE_SIZE;
-        Fence fence1 = new Fence(x, y);
-        addObject(fence1, x, y);
-
-        x = HALF_TILE_SIZE + TILE_SIZE * 6;
-        y = VISIBLE_HEIGHT - HALF_TILE_SIZE - TILE_SIZE;        
-        Fence fence2 = new Fence(x, y);
-        addObject(fence2, x, y);
-
-        x = HALF_TILE_SIZE + TILE_SIZE * 7;
-        y = VISIBLE_HEIGHT - HALF_TILE_SIZE - TILE_SIZE;
-        Fence fence3 = new Fence(x, y);
-        addObject(fence3, x, y);
-
-        // Two fences on right side of world
-        x = SCROLLABLE_WIDTH - HALF_TILE_SIZE - TILE_SIZE * 3;
-        y = VISIBLE_HEIGHT / 2;
-        Fence fence4 = new Fence(x, y);
-        addObject(fence4, x, y);
-
-        x = SCROLLABLE_WIDTH - HALF_TILE_SIZE - TILE_SIZE * 4;
-        y = VISIBLE_HEIGHT / 2;
-        Fence fence5 = new Fence(x, y);
-        addObject(fence5, x, y);
-    }
-
+    
     /**
      * Add steps made out of metal plates leading to end of world.
      */
@@ -441,19 +567,6 @@ public class SideScrollingWorld extends World
                 addObject(plate, x, y);
             }
         }
-    }
-
-    /**
-     * Add a few clouds for the opening scene.
-     */
-    private void addClouds()
-    {
-        Cloud cloud1 = new Cloud(170, 125);
-        addObject(cloud1, 170, 125);
-        Cloud cloud2 = new Cloud(450, 175);
-        addObject(cloud2, 450, 175);
-        Cloud cloud3 = new Cloud(775, 50);
-        addObject(cloud3, 775, 50);
     }
 
     /**
