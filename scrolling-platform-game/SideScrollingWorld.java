@@ -95,6 +95,9 @@ public class SideScrollingWorld extends World
       
         //addRightGround();
       
+        // Add bubbles
+        Bubble bubble1 = new Bubble(3 * TILE_SIZE + HALF_TILE_SIZE, 10 * TILE_SIZE + HALF_TILE_SIZE);
+        addObject(bubble1, 3 * TILE_SIZE + HALF_TILE_SIZE, 10 * TILE_SIZE + HALF_TILE_SIZE);
      
        // Track time
        frames = frames + 1;

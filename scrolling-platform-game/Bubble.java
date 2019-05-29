@@ -1,71 +1,28 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.util.List;
 
 /**
- * This is the class for the "main character" in the action.
+ * Write a description of class BelowGround here.
  * 
- * @author R. Gordon
- * @version May 8, 2019
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public class Bubble extends Actor
+public class Bubble extends Decoration
 {
-    /**
-     * Instance variables
-     * 
-     * These are available for use in any method below.
-     */    
-    // Horizontal speed (change in horizontal position, or delta X)
-    private int deltaX = 4;
-
-    // Vertical speed (change in vertical position, or delta Y)
-    private int deltaY = 4;
-
-    // Acceleration for falls
-    private int acceleration = 2;
-
-    // Track current theoretical position in wider "scrollable" world
-    private int currentScrollableWorldXPosition;
-
-    // Track whether game is over or not
-    private boolean isGameOver;
-
-    
-    // For walking animation
-    private GreenfootImage walkingRightImages[];
-    private GreenfootImage walkingLeftImages[];
-    private static final int WALK_ANIMATION_DELAY = 8;
-    private static final int COUNT_OF_WALKING_IMAGES = 2;
-    private int walkingFrames;
-    
-    
-    
-   
-
     /**
      * Constructor
      * 
-     * This runs once when the Hero object is created.
+     * Called once when object is created.
      */
-    Bubble(int startingX)
+    Bubble(int scrollableWorldX, int scrollableWorldY)
     {
-        // Set where hero begins horizontally
-        currentScrollableWorldXPosition = startingX;
-
-        // Game on
-        isGameOver = false;
-
-        // Set image
-        setImage("BubbleBobble_29.png");
-        
-        GreenfootImage image = getImage();  
-        image.scale(40, 30);
-
-       
-
-    }
-
-   
-    }
-
-    
-
+        super(scrollableWorldX, scrollableWorldY);
+    }    
+    /**
+     * Act - do whatever the GroundBelow wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act() 
+    {
+        // Add your action code here.
+    }    
+}
